@@ -312,6 +312,6 @@ module_init(i10_init);
 module_exit(i10_exit);
 
 MODULE_AUTHOR("Jaehyun Hwang, Qizhe Cai, Midhul Vuppalapati, Rachit Agarwal");
-MODULE_LICENSE("GPLv2");
+MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("i10 I/O scheduler");
 
