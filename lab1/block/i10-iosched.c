@@ -1,6 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * The i10 I/O Scheduler - supports batching at blk-mq.
+ *	The main use case is disaggregated storage access
+ *	using NVMe-over-Fabric (e.g., NVMe-over-TCP device driver).
+ *
+ * An early version of the idea is described and evaluated in
+ * "TCP ≈ RDMA: CPU-efficient Remote Storage Access with i10",
+ * USENIX NSDI 2020.
+ *
+ * Copyright (C) 2020 Cornell University
+ *	Jaehyun Hwang <jaehyun.hwang@cornell.edu>
+ *	Qizhe Cai <qc228@cornell.edu>
+ *	Midhul Vuppalapati <mvv25@cornell.edu%>
+ *	Rachit Agarwal <ragarwal@cornell.edu>
  */
 
 #include <linux/kernel.h>
@@ -299,7 +311,7 @@ static void __exit i10_exit(void)
 module_init(i10_init);
 module_exit(i10_exit);
 
-MODULE_AUTHOR("i10");
+MODULE_AUTHOR("Jaehyun Hwang, Qizhe Cai, Midhul Vuppalapati, Rachit Agarwal");
 MODULE_LICENSE("GPLv2");
 MODULE_DESCRIPTION("i10 I/O scheduler");
 
