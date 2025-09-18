@@ -1,1 +1,0 @@
-cmd_/home/ubuntu/ece5658/lab1/i10/i10-iosched.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/ubuntu/ece5658/lab1/i10/i10-iosched.ko /home/ubuntu/ece5658/lab1/i10/i10-iosched.o /home/ubuntu/ece5658/lab1/i10/i10-iosched.mod.o;  true
