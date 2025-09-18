@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/ece5658/lab1/i10/Module.symvers := sed 's/ko$$/o/' /home/ubuntu/ece5658/lab1/i10/modules.order | scripts/mod/modpost -m -a   -o /home/ubuntu/ece5658/lab1/i10/Module.symvers -e -i Module.symvers   -T -
