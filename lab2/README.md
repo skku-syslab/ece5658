@@ -31,9 +31,9 @@ cp -r ~ubuntu/ece5658/lab2/blk-switch/* .
 make menuconfig
 ```
 
-IO Schedulers -> blk-switch I/O scheduler
-Check if blk-switch is modularized
-Save & Exit
+IO Schedulers -> blk-switch I/O scheduler  
+Check if blk-switch is modularized  
+Save & Exit  
 
 **⚠️ [NOTE]**: Even if it has already been modularized, it must be saved
 
