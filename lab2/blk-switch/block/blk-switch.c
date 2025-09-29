@@ -68,6 +68,12 @@ static void blk_switch_finish_request(struct request *rq)
 /* request steering */
 static void blk_switch_select_ctx(struct blk_mq_alloc_data *data)
 {
+	struct request_queue *q = data->q;
+	unsigned int cpu, next_cpu;
+
+	cpu = data->ctx->cpu;
+	next_cpu = (cpu + 1) % nr_cpu_ids;
+	data->ctx = per_cpu_ptr(q->queue_ctx, next_cpu);
 }
 
 static void blk_switch_insert_requests(struct blk_mq_hw_ctx *hctx,
