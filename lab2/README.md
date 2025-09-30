@@ -1,29 +1,19 @@
 # Lab2 : blk-switch
 
-Installing blk-switch requires compiling the kernel. However, it would take too long if we all did it during class, so we decided to compile the kernel at home.
-
 ## Commands
 
 ```
 sudo -s
-apt install sysstat python-pip3
+apt install sysstat python3-pip
 pip install gdown
 cd ~ubuntu/ece5658
 gdown 1f8ltR17j_nx4GcVOZTGj6w_uyKILwO5B
 tar -xvzf lab2.tar.gz
-```
-
-## Change path/to to your environment
-
-```
-cd path/to/linux-5.10
-```
-
-## Commands
-
-```
+cd ~ubuntu/linux-5.10
 cp -r ~ubuntu/ece5658/lab2/blk-switch/* .
 ```
+
+**⚠️ [NOTE]**: We assume linux-5.10 and ece5658 are in ~ubuntu. If not, adjust the path accordingly.
 
 ## Menuconfig
 
